@@ -1,0 +1,237 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+
+#main{
+}
+#main div{
+	display: inline-block;
+}
+
+
+
+@media screen and (orientation: landscape) {
+	#menu{
+		width:160px;
+		margin:2px 0 5px;
+		height:450px;
+		cursor:pointer;
+		background-color: #666;
+		position: relative;
+	}
+	ul{
+		list-style: none;
+		width:120px;
+		height:450px;
+		margin: 0;
+		padding: 20px 0 0 ;
+		cursor: default;
+	}
+	ul li{
+		margin: 2px 0;
+		width:120px;
+		border-top:1px solid #ccc;
+	}
+	ul li:last-child{
+		border-bottom: 1px solid #ccc;
+	}
+	ul li a:hover{
+		background-color: #ccc;
+		color:#000;
+	}
+	ul li a{
+		display: block;
+		text-align: center;
+		padding:10px;
+		color:#fff;
+	}
+	#menu #menu-clicavel{
+		width:42px;
+		background-color: #333;
+		height: 450px;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	#menu-clicavel h2{
+		margin-top:120px;
+	}
+	#menu-clicavel h2 span{
+		color: #fff;	
+		display: block;
+		margin:30px 10px;
+	}
+	#content{
+		position: fixed;
+		width:86%;
+		margin-top:0;
+		padding: 5px;
+	}
+	#menu.esconder{
+		width:60px;
+		margin-left:-20px;
+		transition: 1.5s;
+	}
+	#menu.esconder ul#nav{
+		width:0px;
+		margin-left: -80px;
+		transition: 1.5s;
+	}
+	#menu.mostrar, #menu.mostrar ul#nav{
+		transition: 1s;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	#menu{
+		width:380px;
+		margin:2px 5px;
+		height:158px;
+		cursor:pointer;
+		background-color: #666;
+		position: relative;
+	}
+	ul{
+		list-style: none;
+		width:380px;
+		height:120px;
+		margin: 0;
+		padding: 5px 0 0 ;
+		cursor: default;
+	}
+	ul li{
+		margin: 2px 0;
+		width:380px;
+		border-top:1px solid #ccc;
+	}
+	ul li:last-child{
+		border-bottom: 1px solid #ccc;
+	}
+	ul li a:hover{
+		background-color: #ccc;
+		color:#000;
+	}
+	ul li a{
+		display: block;
+		text-align: center;
+		padding:3px 10px;
+		color:#fff;
+	}
+	#menu #menu-clicavel{
+		width:380px;
+		background-color: #333;
+		height: 42px;
+		position: absolute;
+		bottom:0;
+		right:0;
+	}
+	#menu-clicavel h2{
+		margin:-20px 0 0 0;
+		text-align: center;
+	}
+	#menu-clicavel h2 span{
+		color: #fff;	
+		display: inline-block;
+		margin:30px 10px;
+	}
+	#content{
+		height:86%;
+		margin-top:20px;
+		padding: 5px;
+	}
+	#menu.esconder{
+		height: 60px;
+		margin-top:-20px;
+		transition: 1.5s;
+	}
+	#menu.esconder ul#nav{
+		height:0px;
+		margin-top: -65px;
+		transition: 1.5s;
+	}
+	#menu.mostrar, #menu.mostrar ul#nav{
+		transition: 1s;
+	}
+}
+
+
+/*#conteudo{
+	position: absolute;	
+	width:230px;
+	border: 1px solid red;
+	background-color: red;
+	height: 100%;
+	cursor:pointer;
+}
+
+#conteudo > #menu {
+	max-width: auto;
+	border: 1px solid orange;	
+	height: auto;
+	left:0;
+}
+#conteudo > #clicavel{
+	width:20px;
+	background-color: #fff;
+	cursor: pointer;
+	height: 100%;
+	border: 3px solid #d32;
+	position: absolute;
+	left:230px;
+	top:0;
+}
+ul#nav{
+	border: 1px solid blue;	
+	list-style: none;
+}
+/*
+
+#menu ul#nav li{
+	position: relative;
+}
+
+
+*/
+/*
+#conteudo.esconder{
+	width:20px;
+	transition: 1.5s, left 4s;
+}
+#conteudo.esconder ul{
+	transition: 1.2s, left 4s;
+}
+#conteudo.mostrar{
+	transition: 1.5s, right 4s;
+}
+#conteudo.mostrar ul{
+	transition: 0.5s;
+}*/
+
+/*#menu ul#nav li > a{
+	padding: auto;
+	display: block;
+	text-align: center;
+	margin-bottom: 3px;
+	text-decoration: none;
+}
+#menu ul#nav li > a:hover{
+	background-color: #000;
+	color:#fff;
+	text-decoration: underline;
+}
+#menu ul#nav li > ul{
+	position: relative;
+	left:20px;
+	display: none;
+	transition: height 2s;
+    transition-timing-function: ease-in-out;
+	height: auto;
+
+}
+#menu ul#nav li:hover > ul{
+	height:auto;
+	display: block;
+	transition: scale(1.4s);
+}
+*/
